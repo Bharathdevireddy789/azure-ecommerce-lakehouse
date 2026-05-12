@@ -42,3 +42,9 @@ Architecture diagram coming soon.
 ## Current Status
 
 Phase 1 — Project Initialization
+
+---
+
+## Environment Setup
+
+Create a `.env` file using `.env.example`.
