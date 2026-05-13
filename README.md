@@ -105,9 +105,9 @@ azure-ecommerce-lakehouse/
 | Phase | Status |
 |---|---|
 | Phase 1 — Project Initialization | Complete |
-| Phase 2 — Local Development Environment | In Progress |
-| Phase 3 — Bronze Layer Ingestion | Planned |
-| Phase 4 — Spark Transformations | Planned |
+| Phase 2 — Local Development Environment | Complete |
+| Phase 3 — Bronze Layer Ingestion | Complete |
+| Phase 4 — Spark Transformations | In Progress |
 | Phase 5 — Silver Layer | Planned |
 | Phase 6 — Gold Layer | Planned |
 | Phase 7 — Airflow Orchestration | Planned |
@@ -197,6 +197,21 @@ POSTGRES_DB=airflow
 
 KAFKA_BROKER=kafka:9092
 ```
+
+---
+
+## Bronze Layer Features
+
+Implemented features:
+- FakeStore API ingestion
+- Kafka producer pipeline
+- Raw JSON archival
+- Timestamp-based storage
+- Logging support
+- Dockerized Kafka infrastructure
+
+Documentation:
+docs/phase-3-bronze-layer.md
 
 ---
 
