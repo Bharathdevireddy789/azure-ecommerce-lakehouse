@@ -110,8 +110,8 @@ azure-ecommerce-lakehouse/
 | Phase 4 — Silver Layer | Complete |
 | Phase 5 — Gold Layer | Complete |
 | Phase 6 — Airflow Orchestration | Complete |
-| Phase 7 — Snowflake Warehouse | In Progress |
-| Phase 8 — Power BI Dashboards | Planned |
+| Phase 7 — Snowflake Warehouse | Complete |
+| Phase 8 — Power BI Dashboards | In Progress |
 | Phase 9 — CI/CD | Planned |
 | Phase 10 — Terraform Infrastructure | Planned |
 
@@ -157,6 +157,18 @@ Features:
 - Retry handling
 - Task dependencies
 - Automated scheduling
+
+---
+
+## Warehouse Layer
+
+The platform loads Gold analytics datasets into PostgreSQL for downstream analytics and BI consumption.
+
+Features:
+- Analytics serving layer
+- Structured warehouse tables
+- ETL-based loading
+- SQL-ready datasets
 
 ---
 

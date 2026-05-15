@@ -17,6 +17,9 @@ top_products_df = spark.read.parquet(
     "data/processed/gold/top_products"
 )
 
+if category_sales_df.count() == 0:
+    raise Exception("Category sales dataset is empty")
+
 conn = psycopg2.connect(**DB_CONFIG)
 
 cursor = conn.cursor()
