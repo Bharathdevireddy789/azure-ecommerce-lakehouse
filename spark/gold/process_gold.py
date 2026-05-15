@@ -11,6 +11,7 @@ GOLD_PATH = "data/processed/gold"
 spark = (
     SparkSession.builder
     .appName("GoldLayerProcessing")
+    .master("local[*]")
     .getOrCreate()
 )
 

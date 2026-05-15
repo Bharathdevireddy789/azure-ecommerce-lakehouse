@@ -26,20 +26,31 @@ for file in json_files:
 spark = (
     SparkSession.builder
     .appName("SilverLayerProcessing")
+    .master("local[*]")
     .getOrCreate()
 )
 
 # Read files
 df = (
     spark.read
+    .option("multiLine", "true")
     .schema(product_schema)
     .json(json_files)
 )
+
+raw_count = df.count()
+print(f"Raw products read: {raw_count}")
 
 # Transformations
 cleaned_df = clean_products(df)
 
 validated_df = validate_products(cleaned_df)
+
+validated_count = validated_df.count()
+print(f"Valid products after silver validation: {validated_count}")
+
+if validated_count == 0:
+    raise Exception("Silver validation produced zero valid products")
 
 # Write Silver layer
 (
