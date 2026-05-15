@@ -43,4 +43,12 @@ with DAG(
         )
     )
 
-    bronze_task >> silver_task >> gold_task
+    warehouse_task = BashOperator(
+        task_id="warehouse_loading",
+        bash_command=(
+            f"docker exec {SPARK_CONTAINER} "
+            "bash -lc 'cd /app && spark-submit warehouse/load_gold_to_warehouse.py >> logs/warehouse.log 2>&1'"
+        )
+    )
+
+    bronze_task >> silver_task >> gold_task >> warehouse_task
