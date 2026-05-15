@@ -1,13 +1,15 @@
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from datetime import datetime
+from datetime import timedelta
 
 SPARK_CONTAINER = "spark"
 
 default_args = {
     "owner": "srinath",
     "start_date": datetime(2025, 1, 1),
-    "retries": 1
+    "retries": 2,
+    "retry_delay": timedelta(minutes=1)
 }
 
 with DAG(
