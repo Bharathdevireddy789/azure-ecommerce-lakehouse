@@ -39,13 +39,19 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
 
   spark:
-    image: apache/spark:3.5.1
+    build:
+      context: .
+      dockerfile: docker/spark/Dockerfile
+
     container_name: spark
+
     working_dir: /app
+
     volumes:
       - ./:/app
-    environment:
-      - PATH=/opt/spark/bin:$PATH
+
+    ports:
+      - "4040:4040"
+
     stdin_open: true
     tty: true
-    command: /bin/bash
