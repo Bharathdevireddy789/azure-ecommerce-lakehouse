@@ -107,14 +107,40 @@ azure-ecommerce-lakehouse/
 | Phase 1 — Project Initialization | Complete |
 | Phase 2 — Local Development Environment | Complete |
 | Phase 3 — Bronze Layer Ingestion | Complete |
-| Phase 4 — Spark Transformations | In Progress |
-| Phase 5 — Silver Layer | Planned |
+| Phase 4 — Spark Transformations | Complete |
+| Phase 5 — Silver Layer | In Progress |
 | Phase 6 — Gold Layer | Planned |
 | Phase 7 — Airflow Orchestration | Planned |
 | Phase 8 — Snowflake Warehouse | Planned |
 | Phase 9 — Power BI Dashboards | Planned |
 | Phase 10 — CI/CD | Planned |
 | Phase 11 — Terraform Infrastructure | Planned |
+
+---
+
+## Silver Layer
+
+The Silver layer performs structured ETL transformations using PySpark.
+
+Features:
+- Schema enforcement
+- Deduplication
+- Data standardization
+- Validation checks
+- Parquet optimization
+
+---
+
+## Gold Layer
+
+The Gold layer generates business-ready analytical datasets.
+
+Features:
+- Revenue aggregation
+- Product analytics
+- Category-level KPIs
+- Parquet analytics tables
+- Optimized reporting datasets
 
 ---
 

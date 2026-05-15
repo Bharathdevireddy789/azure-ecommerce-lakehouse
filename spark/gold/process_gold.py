@@ -16,9 +16,16 @@ spark = (
 
 df = spark.read.parquet(SILVER_PATH)
 
+if df.count() == 0:
+    raise Exception("Silver layer dataset is empty")
+
 category_sales_df = category_sales(df)
 
 top_products_df = top_products(df)
+
+category_sales_df.show()
+
+top_products_df.show(5)
 
 (
     category_sales_df.write
