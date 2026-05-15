@@ -23,7 +23,7 @@ with DAG(
         task_id="bronze_ingestion",
         bash_command=(
             f"docker exec {SPARK_CONTAINER} "
-            "bash -lc 'cd /app && python spark/bronze/ingest_api.py'"
+            "bash -lc 'cd /app && python spark/bronze/ingest_api.py >> logs/bronze.log 2>&1'"
         )
     )
 
@@ -31,7 +31,7 @@ with DAG(
         task_id="silver_processing",
         bash_command=(
             f"docker exec {SPARK_CONTAINER} "
-            "bash -lc 'cd /app && python spark/silver/process_silver.py'"
+            "bash -lc 'cd /app && python spark/silver/process_silver.py >> logs/silver.log 2>&1'"
         )
     )
 
@@ -39,7 +39,7 @@ with DAG(
         task_id="gold_processing",
         bash_command=(
             f"docker exec {SPARK_CONTAINER} "
-            "bash -lc 'cd /app && python spark/gold/process_gold.py'"
+            "bash -lc 'cd /app && python spark/gold/process_gold.py >> logs/gold.log 2>&1'"
         )
     )
 
