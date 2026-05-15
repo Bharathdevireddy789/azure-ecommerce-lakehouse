@@ -107,14 +107,13 @@ azure-ecommerce-lakehouse/
 | Phase 1 — Project Initialization | Complete |
 | Phase 2 — Local Development Environment | Complete |
 | Phase 3 — Bronze Layer Ingestion | Complete |
-| Phase 4 — Spark Transformations | Complete |
-| Phase 5 — Silver Layer | Complete |
-| Phase 6 — Gold Layer | In Progress |
-| Phase 7 — Airflow Orchestration | Planned |
-| Phase 8 — Snowflake Warehouse | Planned |
-| Phase 9 — Power BI Dashboards | Planned |
-| Phase 10 — CI/CD | Planned |
-| Phase 11 — Terraform Infrastructure | Planned |
+| Phase 4 — Silver Layer | Complete |
+| Phase 5 — Gold Layer | Complete |
+| Phase 6 — Airflow Orchestration | Complete |
+| Phase 7 — Snowflake Warehouse | In Progress |
+| Phase 8 — Power BI Dashboards | Planned |
+| Phase 9 — CI/CD | Planned |
+| Phase 10 — Terraform Infrastructure | Planned |
 
 ---
 
@@ -141,6 +140,23 @@ Features:
 - Category-level KPIs
 - Parquet analytics tables
 - Optimized reporting datasets
+
+---
+
+## Airflow Orchestration
+
+The platform uses Apache Airflow for workflow orchestration.
+
+Pipeline Flow:
+1. Bronze ingestion
+2. Silver transformation
+3. Gold analytics generation
+
+Features:
+- DAG orchestration
+- Retry handling
+- Task dependencies
+- Automated scheduling
 
 ---
 
