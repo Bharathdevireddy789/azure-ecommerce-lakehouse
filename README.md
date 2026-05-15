@@ -108,8 +108,8 @@ azure-ecommerce-lakehouse/
 | Phase 2 — Local Development Environment | Complete |
 | Phase 3 — Bronze Layer Ingestion | Complete |
 | Phase 4 — Spark Transformations | Complete |
-| Phase 5 — Silver Layer | In Progress |
-| Phase 6 — Gold Layer | Planned |
+| Phase 5 — Silver Layer | Complete |
+| Phase 6 — Gold Layer | In Progress |
 | Phase 7 — Airflow Orchestration | Planned |
 | Phase 8 — Snowflake Warehouse | Planned |
 | Phase 9 — Power BI Dashboards | Planned |
