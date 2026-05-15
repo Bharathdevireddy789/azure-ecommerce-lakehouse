@@ -11,3 +11,10 @@ def clean_products(df):
     )
 
     return cleaned_df
+
+
+def validate_products(df):
+
+    validated_df = df.filter(col("price").isNotNull())
+
+    return validated_df
