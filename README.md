@@ -111,8 +111,8 @@ azure-ecommerce-lakehouse/
 | Phase 5 — Gold Layer | Complete |
 | Phase 6 — Airflow Orchestration | Complete |
 | Phase 7 — Snowflake Warehouse | Complete |
-| Phase 8 — Power BI Dashboards | In Progress |
-| Phase 9 — CI/CD | Planned |
+| Phase 8 — Power BI Dashboards | Complete |
+| Phase 9 — CI/CD | In Progress |
 | Phase 10 — Terraform Infrastructure | Planned |
 
 ---
@@ -169,6 +169,20 @@ Features:
 - Structured warehouse tables
 - ETL-based loading
 - SQL-ready datasets
+
+---
+
+## Analytics Dashboards
+
+Power BI dashboards provide business insights from the warehouse analytics layer.
+
+Dashboards include:
+- Revenue KPIs
+- Category sales analysis
+- Product performance tracking
+- Interactive filtering
+
+![Sales Dashboard](dashboards/screenshots/Sales.png)
 
 ---
 
