@@ -1,11 +1,12 @@
-from pyspark.sql.functions import *
+from pyspark.sql.functions import col, count, round, sum as spark_sum
+
 
 def category_sales(df):
 
     return (
         df.groupBy("category")
         .agg(
-            round(sum("price"), 2).alias("total_sales"),
+            round(spark_sum("price"), 2).alias("total_sales"),
             count("id").alias("product_count")
         )
     )

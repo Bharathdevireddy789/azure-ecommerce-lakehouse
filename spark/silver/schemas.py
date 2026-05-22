@@ -1,4 +1,4 @@
-from pyspark.sql.types import *
+from pyspark.sql.types import DoubleType, IntegerType, StringType, StructField, StructType
 
 product_schema = StructType([
     StructField("id", IntegerType(), True),

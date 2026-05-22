@@ -1,7 +1,11 @@
 import requests
 
-from save_raw_data import save_raw_data
-from utils import setup_logger
+try:
+    from .save_raw_data import save_raw_data
+    from .utils import setup_logger
+except ImportError:
+    from save_raw_data import save_raw_data
+    from utils import setup_logger
 
 API_URL = "https://fakestoreapi.com/products"
 

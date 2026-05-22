@@ -4,6 +4,7 @@ from datetime import datetime
 
 RAW_PATH = "data/raw/products"
 
+
 def save_raw_data(data):
 
     os.makedirs(RAW_PATH, exist_ok=True)

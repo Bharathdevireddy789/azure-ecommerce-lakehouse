@@ -1,4 +1,5 @@
-from pyspark.sql.functions import *
+from pyspark.sql.functions import col, current_timestamp, lower, trim
+
 
 def clean_products(df):
 

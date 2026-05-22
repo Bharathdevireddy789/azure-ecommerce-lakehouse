@@ -184,6 +184,8 @@ Dashboards include:
 
 ![Sales Dashboard](dashboards/screenshots/Sales.png)
 
+![Products Dashboard](dashboards/screenshots/Products.png)
+
 ---
 
 # Local Development Setup

@@ -9,6 +9,7 @@ producer = KafkaProducer(
 
 TOPIC_NAME = "orders"
 
+
 def send_products():
 
     products = fetch_products()
