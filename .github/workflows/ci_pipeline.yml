@@ -32,7 +32,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          pytest
+          python -m pytest
 
       - name: Run Lint Checks
         run: |
