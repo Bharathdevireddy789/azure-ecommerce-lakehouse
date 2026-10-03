@@ -113,7 +113,6 @@ azure-ecommerce-lakehouse/
 | Phase 7 — Snowflake Warehouse | Complete |
 | Phase 8 — Power BI Dashboards | Complete |
 | Phase 9 — CI/CD | Complete |
-| Phase 10 — Terraform Infrastructure | In Progress |
 
 ---
 
@@ -195,7 +194,6 @@ The project includes automated GitHub Actions workflows for:
 - Linting
 - Continuous integration
 
-![CI Pipeline](https://github.com/srinathreddykota523/azure-ecommerce-lakehouse/actions/workflows/ci_pipeline.yml/badge.svg)
 
 ---
 
